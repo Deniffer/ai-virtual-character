@@ -128,35 +128,18 @@ export default function ({ setVirtualCharacters }: Props) {
           return false;
         }}
       >
-        <Tabs defaultValue="text" className="w-[400px]">
-          <TabsList>
-            <TabsTrigger value="text">Text</TabsTrigger>
-            <TabsTrigger value="photo">Photo</TabsTrigger>
-          </TabsList>
-          <TabsContent value="text">
-            <Input
-              type="file"
-              // className="file-input file-input-bordered file-input-primary w-full max-w-xs"
-            />
-            <Button type="submit" disabled={loading} onClick={handleSubmit}>
-              {loading ? "Generating..." : "Generate"}
-            </Button>
-          </TabsContent>
-          <TabsContent value="photo">
-            <Input
-              type="text"
-              placeholder="virtualCharacter description"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              onKeyDown={handleInputKeydown}
-              disabled={loading}
-              ref={inputRef}
-            />
-            <Button type="submit" disabled={loading} onClick={handleSubmit}>
-              {loading ? "Generating..." : "Generate"}
-            </Button>
-          </TabsContent>
-        </Tabs>
+        <Input
+          type="text"
+          placeholder="Wallpaper description"
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+          onKeyDown={handleInputKeydown}
+          disabled={loading}
+          ref={inputRef}
+        />
+        <Button type="button" disabled={loading} onClick={handleSubmit}>
+          {loading ? "Generating..." : "Generate"}
+        </Button>
       </form>
     </div>
   );

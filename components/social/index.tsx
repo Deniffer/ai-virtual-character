@@ -1,6 +1,5 @@
 import { BsGithub, BsTwitterX } from "react-icons/bs";
 
-import { FaProductHunt } from "react-icons/fa";
 import { SiBuymeacoffee } from "react-icons/si";
 
 export default function () {
@@ -13,13 +12,6 @@ export default function () {
       >
         <BsGithub className="text-lg" />
       </a>
-      {/* <a
-        href="https://www.producthunt.com/posts/ai-wallpaper?utm_source=aiwallpaper.shop"
-        target="_blank"
-        className="mx-3 flex max-w-[24px] flex-col items-center justify-center"
-      >
-        <FaProductHunt className="text-xl" />
-      </a> */}
       <a
         href="https://twitter.com/wenqing23772557"
         target="_blank"
@@ -28,7 +20,7 @@ export default function () {
         <BsTwitterX className="text-lg" />
       </a>
       <a
-        href="https://www.buymeacoffee.com/idoubi"
+        href="https://www.buymeacoffee.com/deniffer"
         target="_blank"
         className="mx-3 flex max-w-[24px] flex-col items-center justify-center"
       >

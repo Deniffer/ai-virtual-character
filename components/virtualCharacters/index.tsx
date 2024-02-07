@@ -8,6 +8,7 @@ import { FaDownload } from "react-icons/fa";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "../ui/button";
+import { toast } from "sonner";
 
 interface Props {
   virturalCharacters: VirtualCharacter[];
@@ -70,7 +71,7 @@ export default function ({ virturalCharacters, loading }: Props) {
                             </a>
                             <CopyToClipboard
                               text={virtualCharacter.img_description}
-                            //   onCopy={() => toast.success("Copied")}
+                              onCopy={() => toast.success("Copied")}
                             >
                               <Button>Copy Prompt</Button>
                             </CopyToClipboard>
