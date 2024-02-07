@@ -130,7 +130,7 @@ export default function ({ setVirtualCharacters }: Props) {
       >
         <Input
           type="text"
-          placeholder="Wallpaper description"
+          placeholder="virtual character description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           onKeyDown={handleInputKeydown}
