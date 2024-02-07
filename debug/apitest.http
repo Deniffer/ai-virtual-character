@@ -1,0 +1,25 @@
+@baseUri=http://localhost:3000/api
+
+### test
+
+GET  {{baseUri}}/hello-world
+
+
+### generate a new virtual character picture
+
+POST {{baseUri}}/gen-virtual-character
+Content-Type: application/json
+
+{
+    "description": "动漫风：一个七岁的小男生，穿着蓝色渐变小方格的羽绒服，黑色裤子，蓝色球鞋，戴着一顶白色兔子帽，背着一只淡黄和白色相间的小黄峰小书包，手里拿着一把银色的塑料玩具剑"
+}
+
+### get all virtual characters
+
+GET {{baseUri}}/get-virtual-characters
+
+
+### debug s3 upload and download
+
+GET {{baseUri}}/upload-test
+
